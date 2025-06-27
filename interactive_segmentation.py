@@ -42,13 +42,12 @@ class Segmentation():
             if self.rect == 0:
                 self.rect_draw = 1
                 self.xi, self.yi = x, y
-
+                
         elif event == cv2.EVENT_MOUSEMOVE:
             if self.rect_draw == 1:
                 self.img = self.img2.copy()
                 cv2.rectangle(self.img, (self.xi, self.yi), (x, y), (255, 0, 0), 2 )
                 
-        
         elif event == cv2.EVENT_RBUTTONUP:
             self.rect_draw = 0
             self.rect = 1
@@ -79,7 +78,6 @@ class Segmentation():
         cv2.setMouseCallback("input", self.mouse_rect)
 
         while True:
-           
             cv2.imshow("input", self.img)
             cv2.imshow("output", self.output)
             key = cv2.waitKey(1)
