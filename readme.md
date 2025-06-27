@@ -22,6 +22,7 @@ Algoritma, segmentasyon sürecini başlatmak için kullanıcı etkileşimi gerek
 - Dikdörtgen çizmek için:
     Görsel üzerinde sağ tıklayıp (ve basılı tutup) nesneyi çevreleyecek şekilde bir dikdörtgen çizin. Bu adım, GrabCut algoritmasına ön planın nerede olduğunu belirtmek içindir.
 - Manuel düzeltme yapmak için (sol tıklayarak çizebilirsiniz):
+-
 | Tuş | Açıklama           | Renk    |
 | --- | ------------------ | ------- |
 | `0` | Kesin arka plan    | Siyah   |
